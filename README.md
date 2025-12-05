@@ -310,4 +310,4 @@ Build optimisé pour la production
 La plateforme est entièrement statique et peut être déployée facilement sur n’importe quel service d’hébergement web.
 Pour ce projet, le déploiement a été réalisé via Vercel, permettant d’accéder à la plateforme en ligne de manière fiable, rapide et optimisée.
 
-https://trois-dimensions-dkny.vercel.app/
+https://trois-dimensions-gt8u.vercel.app/
