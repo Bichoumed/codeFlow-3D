@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Énergie Solaire 3D - Guide Éducatif Complet</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-sun"></i>
+                <span>Solar<span class="highlight">Edu</span>3D</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="#definition" class="nav-link"><i class="fas fa-lightbulb"></i> Définition</a></li>
+                <li><a href="#fonctionnement" class="nav-link"><i class="fas fa-cogs"></i> Fonctionnement</a></li>
+                <li><a href="#avantages" class="nav-link"><i class="fas fa-thumbs-up"></i> Avantages</a></li>
+                <li><a href="#inconvenients" class="nav-link"><i class="fas fa-exclamation-triangle"></i> Inconvénients</a></li>
+                <li><a href="#statistiques" class="nav-link"><i class="fas fa-chart-bar"></i> Statistiques</a></li>
+                <li><a href="#technologies" class="nav-link"><i class="fas fa-rocket"></i> Technologies</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero / Accueil -->
+    <section id="accueil" class="hero-section">
+        <div class="hero-bg"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up">
+                L'Énergie <span class="highlight">Solaire</span><br>
+                <span class="subtitle">Guide Éducatif <span class="highlight">Interactif</span> en 3D</span>
+            </h1>
+            
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                Explorez, comprenez et interagissez avec l'énergie du futur. Découvrez des visualisations 3D uniques, 
+                des données réelles et des informations complètes sur l'énergie solaire.
+            </p>
+            
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="#definition" class="btn-primary">
+                    <i class="fas fa-graduation-cap"></i> Commencer l'Apprentissage
+                </a>
+                <a href="#fonctionnement" class="btn-secondary">
+                    <i class="fas fa-play-circle"></i> Voir les Animations 3D
+                </a>
+            </div>
+        </div>
+        
+        <!-- Animation Soleil 3D -->
+        <div class="sun-3d-container" id="sun-3d"></div>
+        
+        <!-- Flèche de défilement -->
+        <div class="scroll-down">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Définition -->
+    <section id="definition" class="definition-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Qu'est-ce que l'<span class="highlight">Énergie Solaire</span>?</h2>
+                <p class="section-subtitle">Comprendre la source d'énergie la plus abondante de notre planète</p>
+            </div>
+            
+            <div class="definition-content">
+                <div class="definition-text" data-aos="fade-right">
+                    <div class="info-card">
+                        <h3><i class="fas fa-sun"></i> Définition Scientifique</h3>
+                        <p>L'énergie solaire est l'énergie émise par le soleil sous forme de rayonnement électromagnétique. Chaque heure, la Terre reçoit suffisamment d'énergie solaire pour répondre aux besoins énergétiques mondiaux pendant une année entière (environ 430 quintillions de joules).</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-bolt"></i> Technologies Principales</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <i class="fas fa-solar-panel"></i>
+                                <h4>Photovoltaïque</h4>
+                                <p>Conversion directe de la lumière en électricité</p>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-temperature-high"></i>
+                                <h4>Thermique</h4>
+                                <p>Utilisation de la chaleur pour produire de l'électricité</p>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-water"></i>
+                                <h4>Thermodynamique</h4>
+                                <p>Production d'électricité via vapeur et turbines</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-history"></i> Historique</h3>
+                        <p>Découverte de l'effet photovoltaïque en 1839 par Edmond Becquerel. Premier panneau solaire moderne développé en 1954 par Bell Laboratories avec un rendement de 6%.</p>
+                    </div>
+                </div>
+                
+                <div class="definition-3d" data-aos="fade-left">
+                    <div class="card-3d">
+                        <h4><i class="fas fa-eye"></i> Visualisation 3D : Rayonnement Solaire</h4>
+                        <div class="scene-container" id="rayonnement-scene">
+                            <div class="scene-loading">
+                                <div class="spinner"></div>
+                                <p>Chargement de la scène 3D...</p>
+                            </div>
+                        </div>
+                        <div class="scene-controls">
+                            <button class="scene-btn" onclick="changeRadiationIntensity()">
+                                <i class="fas fa-sun"></i> Intensité
+                            </button>
+                            <button class="scene-btn" onclick="toggleRadiationAnimation()">
+                                <i class="fas fa-play"></i> Animation
+                            </button>
+                            <button class="scene-btn" onclick="resetRadiationView()">
+                                <i class="fas fa-undo"></i> Réinitialiser
+                            </button>
+                        </div>
+                        <div class="scene-info">
+                            <p><i class="fas fa-info-circle"></i> Chaque seconde, le soleil émet l'équivalent de 4 millions de tonnes d'énergie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Données clés -->
+            <div class="key-data" data-aos="fade-up">
+                <h3><i class="fas fa-key"></i> Données Clés</h3>
+                <div class="data-grid">
+                    <div class="data-item">
+                        <div class="data-value">173,000</div>
+                        <div class="data-label">Térawatts reçus par la Terre</div>
+                    </div>
+                    <div class="data-item">
+                        <div class="data-value">8 min 20 sec</div>
+                        <div class="data-label">Temps pour atteindre la Terre</div>
+                    </div>
+                    <div class="data-item">
+                        <div class="data-value">5 milliards</div>
+                        <div class="data-label">Années de réserves restantes</div>
+                    </div>
+                    <div class="data-item">
+                        <div class="data-value">1.366 kW/m²</div>
+                        <div class="data-label">Constante solaire</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Fonctionnement -->
+    <section id="fonctionnement" class="fonctionnement-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Comment <span class="highlight">Fonctionne</span> l'Énergie Solaire?</h2>
+                <p class="section-subtitle">Un processus technologique fascinant expliqué étape par étape en 3D</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step" data-aos="fade-up">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3><i class="fas fa-sun"></i> Rayonnement Solaire</h3>
+                        <p>Les photons (particules de lumière) émis par le soleil parcourent 150 millions de km en 8 minutes pour atteindre la Terre à la vitesse de 300,000 km/s.</p>
+                        <div class="step-detail">
+                            <span class="detail-label">Énergie :</span>
+                            <span class="detail-value">1,366 W/m²</span>
+                        </div>
+                    </div>
+                    <div class="step-visual" id="step1-scene"></div>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3><i class="fas fa-atom"></i> Absorption Photovoltaïque</h3>
+                        <p>Les cellules en silicium absorbent les photons. L'énergie des photons libère des électrons, créant des paires électron-trou dans le semi-conducteur.</p>
+                        <div class="step-detail">
+                            <span class="detail-label">Matériau :</span>
+                            <span class="detail-value">Silicium cristallin</span>
+                        </div>
+                    </div>
+                    <div class="step-visual" id="step2-scene"></div>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3><i class="fas fa-bolt"></i> Création de Courant</h3>
+                        <p>Le champ électrique interne de la cellule sépare les électrons et les trous, générant un courant électrique continu (DC).</p>
+                        <div class="step-detail">
+                            <span class="detail-label">Tension :</span>
+                            <span class="detail-value">0.5-0.6 V par cellule</span>
+                        </div>
+                    </div>
+                    <div class="step-visual" id="step3-scene"></div>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3><i class="fas fa-exchange-alt"></i> Conversion et Distribution</h3>
+                        <p>L'onduleur convertit le courant continu (DC) en courant alternatif (AC) à 50/60 Hz compatible avec le réseau électrique.</p>
+                        <div class="step-detail">
+                            <span class="detail-label">Efficacité :</span>
+                            <span class="detail-value">95-98%</span>
+                        </div>
+                    </div>
+                    <div class="step-visual" id="step4-scene"></div>
+                </div>
+            </div>
+            
+            <!-- Simulation Interactive 3D -->
+            <div class="process-simulation" data-aos="zoom-in">
+                <div class="simulation-header">
+                    <h3><i class="fas fa-gamepad"></i> Simulation Interactive du Processus Complet</h3>
+                    <p>Modifiez les paramètres et observez l'impact en temps réel</p>
+                </div>
+                
+                <div class="simulation-content">
+                    <div class="simulation-visual" id="process-simulation-scene"></div>
+                    
+                    <div class="simulation-controls">
+                        <h4><i class="fas fa-sliders-h"></i> Contrôles de Simulation</h4>
+                        
+                        <div class="control-group">
+                            <label for="sun-intensity">
+                                <i class="fas fa-sun"></i> Intensité Solaire
+                                <span id="intensity-value">70%</span>
+                            </label>
+                            <input type="range" id="sun-intensity" min="10" max="100" value="70">
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="panel-angle">
+                                <i class="fas fa-angle-up"></i> Angle des Panneaux
+                                <span id="angle-value">30°</span>
+                            </label>
+                            <input type="range" id="panel-angle" min="0" max="90" value="30">
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="temperature">
+                                <i class="fas fa-thermometer-half"></i> Température
+                                <span id="temp-value">25°C</span>
+                            </label>
+                            <input type="range" id="temperature" min="-10" max="50" value="25">
+                        </div>
+                        
+                        <div class="control-buttons">
+                            <button class="control-btn primary" onclick="runFullSimulation()">
+                                <i class="fas fa-play"></i> Lancer Simulation
+                            </button>
+                            <button class="control-btn secondary" onclick="resetSimulation()">
+                                <i class="fas fa-redo"></i> Réinitialiser
+                            </button>
+                        </div>
+                        
+                        <div class="simulation-results">
+                            <h5><i class="fas fa-chart-line"></i> Résultats en Temps Réel</h5>
+                            <div class="result-item">
+                                <span>Énergie Générée :</span>
+                                <span id="energy-output-sim">0 W</span>
+                            </div>
+                            <div class="result-item">
+                                <span>Efficacité :</span>
+                                <span id="efficiency-sim">0%</span>
+                            </div>
+                            <div class="result-item">
+                                <span>CO₂ Évité :</span>
+                                <span id="co2-saved-sim">0 kg</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Avantages -->
+    <section id="avantages" class="avantages-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title"><span class="highlight">Avantages</span> de l'Énergie Solaire</h2>
+                <p class="section-subtitle">Pourquoi choisir l'énergie solaire? Une analyse complète des bénéfices</p>
+            </div>
+            
+            <div class="avantages-grid">
+                <div class="avantage-card" data-aos="flip-left">
+                    <div class="avantage-icon eco">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Écologique</h3>
+                    <p>Zéro émission de CO₂ pendant l'utilisation. Réduction de l'empreinte carbone de 95% par rapport aux énergies fossiles.</p>
+                    <div class="avantage-stats">
+                        <div class="stat">
+                            <div class="stat-value">0</div>
+                            <div class="stat-label">émissions CO₂</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">100%</div>
+                            <div class="stat-label">renouvelable</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="avantage-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="avantage-icon eco">
+                        <i class="fas fa-euro-sign"></i>
+                    </div>
+                    <h3>Économique</h3>
+                    <p>Réduction des factures d'électricité jusqu'à 70%. Retour sur investissement en 7-10 ans avec 25 ans de garantie.</p>
+                    <div class="avantage-stats">
+                        <div class="stat">
+                            <div class="stat-value">70%</div>
+                            <div class="stat-label">économies</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">25 ans</div>
+                            <div class="stat-label">garantie</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="avantage-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="avantage-icon eco">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Autonomie</h3>
+                    <p>Indépendance énergétique totale possible. Production locale réduisant les pertes en transport de 8-15%.</p>
+                    <div class="avantage-stats">
+                        <div class="stat">
+                            <div class="stat-value">100%</div>
+                            <div class="stat-label">autonomie</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">15%</div>
+                            <div class="stat-label">moins de pertes</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="avantage-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="avantage-icon eco">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Évolutif</h3>
+                    <p>Installation modulaire et évolutive. Les prix ont baissé de 89% depuis 2010 avec des rendements en hausse.</p>
+                    <div class="avantage-stats">
+                        <div class="stat">
+                            <div class="stat-value">89%</div>
+                            <div class="stat-label">baisse prix</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">+22%</div>
+                            <div class="stat-label">rendement/an</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Visualisation 3D des Avantages -->
+            <div class="avantages-3d" data-aos="fade-up">
+                <div class="avantages-3d-container">
+                    <h3><i class="fas fa-chart-pie"></i> Visualisation 3D des Impacts Positifs</h3>
+                    
+                    <div class="viz-wrapper">
+                        <div class="viz-scene" id="avantages-scene"></div>
+                        
+                        <div class="viz-info">
+                            <h4><i class="fas fa-calculator"></i> Calcul en Temps Réel</h4>
+                            
+                            <div class="impact-metrics">
+                                <div class="metric">
+                                    <div class="metric-header">
+                                        <i class="fas fa-tree"></i>
+                                        <span>Arbres Équivalents</span>
+                                    </div>
+                                    <div class="metric-value" id="trees-equivalent">0</div>
+                                    <div class="metric-note">1 kW = 2 arbres plantés</div>
+                                </div>
+                                
+                                <div class="metric">
+                                    <div class="metric-header">
+                                        <i class="fas fa-car"></i>
+                                        <span>Voitures Retirées</span>
+                                    </div>
+                                    <div class="metric-value" id="cars-removed">0</div>
+                                    <div class="metric-note">1 kW = 1500 km/an</div>
+                                </div>
+                                
+                                <div class="metric">
+                                    <div class="metric-header">
+                                        <i class="fas fa-house-user"></i>
+                                        <span>Maisons Alimentées</span>
+                                    </div>
+                                    <div class="metric-value" id="homes-powered">0</div>
+                                    <div class="metric-note">1 kW = 1 maison</div>
+                                </div>
+                            </div>
+                            
+                            <div class="viz-controls">
+                                <button class="viz-btn" onclick="calculatePositiveImpact()">
+                                    <i class="fas fa-calculator"></i> Calculer Impact
+                                </button>
+                                <button class="viz-btn secondary" onclick="resetImpact()">
+                                    <i class="fas fa-redo"></i> Réinitialiser
+                                </button>
+                            </div>
+                            
+                            <div class="viz-note">
+                                <p><i class="fas fa-info-circle"></i> Données basées sur une installation moyenne de 3 kW</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Inconvénients -->
+    <section id="inconvenients" class="inconvenients-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title"><span class="highlight">Défis</span> & Inconvénients</h2>
+                <p class="section-subtitle">Une analyse objective des limites et solutions de l'énergie solaire</p>
+            </div>
+            
+            <div class="challenges-content">
+                <div class="challenges-list" data-aos="fade-right">
+                    <div class="challenge-card">
+                        <div class="challenge-header">
+                            <div class="challenge-icon warning">
+                                <i class="fas fa-cloud-sun"></i>
+                            </div>
+                            <div class="challenge-title">
+                                <h3>Intermittence</h3>
+                                <div class="challenge-severity">Sévérité : Moyenne</div>
+                            </div>
+                        </div>
+                        <p>Production uniquement diurne (6-8h/jour en moyenne) et dépendante des conditions météorologiques. Rendement réduit de 15-25% par temps nuageux.</p>
+                        <div class="challenge-data">
+                            <div class="data-point">
+                                <span class="data-label">Production nocturne :</span>
+                                <span class="data-value">0%</span>
+                            </div>
+                            <div class="data-point">
+                                <span class="data-label">Réduction par nuages :</span>
+                                <span class="data-value">15-25%</span>
+                            </div>
+                        </div>
+                        <div class="challenge-solution">
+                            <strong><i class="fas fa-lightbulb"></i> Solutions :</strong>
+                            <ul>
+                                <li>Systèmes de stockage (batteries Lithium-ion)</li>
+                                <li>Mix énergétique intelligent</li>
+                                <li>Réseaux interconnectés</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="challenge-card">
+                        <div class="challenge-header">
+                            <div class="challenge-icon warning">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <div class="challenge-title">
+                                <h3>Coût Initial</h3>
+                                <div class="challenge-severity">Sévérité : Élevée</div>
+                            </div>
+                        </div>
+                        <p>Investissement initial élevé (8,000-15,000€ pour 3 kW) malgré la baisse continue des prix. Temps de retour sur investissement de 7-12 ans.</p>
+                        <div class="challenge-data">
+                            <div class="data-point">
+                                <span class="data-label">Coût moyen 3 kW :</span>
+                                <span class="data-value">10,000€</span>
+                            </div>
+                            <div class="data-point">
+                                <span class="data-label">ROI moyen :</span>
+                                <span class="data-value">8-10 ans</span>
+                            </div>
+                        </div>
+                        <div class="challenge-solution">
+                            <strong><i class="fas fa-lightbulb"></i> Solutions :</strong>
+                            <ul>
+                                <li>Aides gouvernementales (30-50%)</li>
+                                <li>Financement innovant (crowdfunding)</li>
+                                <li>Location avec option d'achat</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="challenge-card">
+                        <div class="challenge-header">
+                            <div class="challenge-icon warning">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="challenge-title">
+                                <h3>Impact Environnemental de Production</h3>
+                                <div class="challenge-severity">Sévérité : Faible</div>
+                            </div>
+                        </div>
+                        <p>Processus de fabrication énergivore (2-3 ans pour compenser l'énergie grise) et utilisation de produits chimiques (acide fluorhydrique).</p>
+                        <div class="challenge-data">
+                            <div class="data-point">
+                                <span class="data-label">Énergie grise :</span>
+                                <span class="data-value">2-3 ans</span>
+                            </div>
+                            <div class="data-point">
+                                <span class="data-label">Recyclabilité :</span>
+                                <span class="data-value">85-95%</span>
+                            </div>
+                        </div>
+                        <div class="challenge-solution">
+                            <strong><i class="fas fa-lightbulb"></i> Solutions :</strong>
+                            <ul>
+                                <li>Recyclage amélioré (programme PV Cycle)</li>
+                                <li>Technologies de fabrication plus propres</li>
+                                <li>Économie circulaire</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Scène 3D des Défis -->
+                <div class="challenges-3d" data-aos="fade-left">
+                    <div class="challenge-3d-container">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Simulation 3D des Défis</h4>
+                        
+                        <div class="challenge-scene" id="challenges-scene">
+                            <div class="scene-loading">
+                                <div class="spinner"></div>
+                                <p>Chargement de la simulation...</p>
+                            </div>
+                        </div>
+                        
+                        <div class="challenge-controls">
+                            <h5>Sélectionnez un scénario :</h5>
+                            <div class="scenario-buttons">
+                                <button class="scenario-btn active" data-scenario="intermittence">
+                                    <i class="fas fa-cloud"></i>
+                                    <span>Intermittence</span>
+                                </button>
+                                <button class="scenario-btn" data-scenario="storage">
+                                    <i class="fas fa-battery-full"></i>
+                                    <span>Stockage</span>
+                                </button>
+                                <button class="scenario-btn" data-scenario="recycling">
+                                    <i class="fas fa-recycle"></i>
+                                    <span>Recyclage</span>
+                                </button>
+                            </div>
+                            
+                            <div class="scenario-info" id="scenario-info">
+                                <p>Visualisez l'impact des différents défis sur la production solaire</p>
+                            </div>
+                            
+                            <div class="challenge-stats">
+                                <div class="stat-item">
+                                    <div class="stat-label">Production Réelle</div>
+                                    <div class="stat-value" id="actual-production">0%</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">Potentiel Perdu</div>
+                                    <div class="stat-value" id="lost-potential">0%</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">Solution Efficace</div>
+                                    <div class="stat-value" id="solution-efficiency">0%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tableau Comparatif -->
+            <div class="comparison-table" data-aos="fade-up">
+                <h3><i class="fas fa-balance-scale"></i> Analyse Comparative Détaillée</h3>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Aspect</th>
+                                <th>Énergie Solaire</th>
+                                <th>Énergie Fossile</th>
+                                <th>Énergie Nucléaire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Émissions CO₂ (g/kWh)</td>
+                                <td class="good">6-50</td>
+                                <td class="bad">400-1000</td>
+                                <td class="medium">12</td>
+                            </tr>
+                            <tr>
+                                <td>Coût (€/kWh)</td>
+                                <td class="good">0.03-0.06</td>
+                                <td class="bad">0.05-0.15</td>
+                                <td class="medium">0.04-0.08</td>
+                            </tr>
+                            <tr>
+                                <td>Disponibilité</td>
+                                <td class="medium">Intermittente</td>
+                                <td class="good">Continue</td>
+                                <td class="good">Continue</td>
+                            </tr>
+                            <tr>
+                                <td>Durée de vie</td>
+                                <td class="good">25-30 ans</td>
+                                <td class="medium">20-25 ans</td>
+                                <td class="good">40-60 ans</td>
+                            </tr>
+                            <tr>
+                                <td>Sécurité</td>
+                                <td class="good">Élevée</td>
+                                <td class="medium">Moyenne</td>
+                                <td class="bad">Risques spécifiques</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-legend">
+                    <div class="legend-item good">Excellent</div>
+                    <div class="legend-item medium">Moyen</div>
+                    <div class="legend-item bad">Défavorable</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Statistiques Mondiales -->
+    <section id="statistiques" class="statistiques-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Statistiques <span class="highlight">Mondiales</span></h2>
+                <p class="section-subtitle">Données réelles et tendances globales de l'énergie solaire</p>
+            </div>
+            
+            <!-- Statistiques en Temps Réel -->
+            <div class="stats-realtime" data-aos="fade-up">
+                <h3><i class="fas fa-globe"></i> Chiffres Clés Mondiaux (2024)</h3>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value" data-count="1300">0</div>
+                            <div class="stat-label">GW Installés</div>
+                            <div class="stat-trend up">+22% vs 2023</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value" data-count="1730">0</div>
+                            <div class="stat-label">TWh Produits</div>
+                            <div class="stat-trend up">+18% vs 2023</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value" data-count="4.3">0</div>
+                            <div class="stat-label">Millions d'Emplois</div>
+                            <div class="stat-trend up">+350,000/an</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value" data-count="89">0</div>
+                            <div class="stat-label">% Baisse Prix (2010-24)</div>
+                            <div class="stat-trend down">-13%/an</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carte 3D Mondiale Interactive -->
+            <div class="world-map-3d" data-aos="zoom-in">
+                <div class="map-container">
+                    <h3><i class="fas fa-map-marked-alt"></i> Carte 3D Interactive de la Production Mondiale</h3>
+                    
+                    <div class="map-wrapper">
+                        <div class="map-scene" id="world-map-scene">
+                            <div class="scene-loading">
+                                <div class="spinner"></div>
+                                <p>Chargement de la carte mondiale...</p>
+                            </div>
+                        </div>
+                        
+                        <div class="map-controls">
+                            <div class="map-legend">
+                                <h4><i class="fas fa-key"></i> Légende (GW installés)</h4>
+                                <div class="legend-item high">> 200 (Leader)</div>
+                                <div class="legend-item medium">50-200 (Développé)</div>
+                                <div class="legend-item low">10-50 (Émergent)</div>
+                                <div class="legend-item minimal">< 10 (Débutant)</div>
+                            </div>
+                            
+                            <div class="country-selector">
+                                <h5><i class="fas fa-search"></i> Explorer un Pays</h5>
+                                <select id="country-select">
+                                    <option value="">Sélectionnez un pays</option>
+                                    <option value="china">Chine (392 GW)</option>
+                                    <option value="usa">États-Unis (149 GW)</option>
+                                    <option value="japan">Japon (84 GW)</option>
+                                    <option value="germany">Allemagne (68 GW)</option>
+                                    <option value="india">Inde (66 GW)</option>
+                                    <option value="france">France (18 GW)</option>
+                                    <option value="spain">Espagne (27 GW)</option>
+                                    <option value="australia">Australie (29 GW)</option>
+                                </select>
+                                <button id="fly-to-country" class="fly-btn">
+                                    <i class="fas fa-plane"></i> Explorer
+                                </button>
+                            </div>
+                            
+                            <div class="country-info" id="country-info">
+                                <h5><i class="fas fa-info-circle"></i> Informations Pays</h5>
+                                <p>Sélectionnez un pays pour voir ses statistiques détaillées</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-data">
+                        <div class="data-card">
+                            <i class="fas fa-crown"></i>
+                            <h4>Leader Mondial</h4>
+                            <div class="data-value">Chine</div>
+                            <div class="data-detail">392 GW (30% mondial)</div>
+                        </div>
+                        <div class="data-card">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Croissance Rapide</h4>
+                            <div class="data-value">Inde</div>
+                            <div class="data-detail">+12 GW/an</div>
+                        </div>
+                        <div class="data-card">
+                            <i class="fas fa-chart-pie"></i>
+                            <h4>Part du Solaire</h4>
+                            <div class="data-value">Espagne</div>
+                            <div class="data-detail">24% de l'électricité</div>
+                        </div>
+                        <div class="data-card">
+                            <i class="fas fa-user"></i>
+                            <h4>Par Habitant</h4>
+                            <div class="data-value">Australie</div>
+                            <div class="data-detail">1.1 kW/personne</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Graphiques de Tendances -->
+            <div class="trends-charts" data-aos="fade-up">
+                <h3><i class="fas fa-chart-area"></i> Tendances et Projections</h3>
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <h4>Évolution des Prix 2010-2024</h4>
+                        <div class="chart-visual" id="price-chart">
+                            <div class="chart-bar" style="height: 100%; width: 11%">
+                                <div class="chart-value">2010: 100%</div>
+                            </div>
+                            <div class="chart-bar" style="height: 100%; width: 32%">
+                                <div class="chart-value">2015: 68%</div>
+                            </div>
+                            <div class="chart-bar" style="height: 100%; width: 67%">
+                                <div class="chart-value">2020: 33%</div>
+                            </div>
+                            <div class="chart-bar" style="height: 100%; width: 89%">
+                                <div class="chart-value">2024: 11%</div>
+                            </div>
+                        </div>
+                        <div class="chart-note">Baisse de 89% en 14 ans</div>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <h4>Croissance Annuelle</h4>
+                        <div class="chart-visual" id="growth-chart">
+                            <div class="chart-line" style="height: 20%">2015: 20%</div>
+                            <div class="chart-line" style="height: 35%">2017: 35%</div>
+                            <div class="chart-line" style="height: 28%">2019: 28%</div>
+                            <div class="chart-line" style="height: 22%">2022: 22%</div>
+                            <div class="chart-line" style="height: 40%">2024: 40%</div>
+                        </div>
+                        <div class="chart-note">Moyenne: 25%/an depuis 2010</div>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <h4>Projection 2030</h4>
+                        <div class="chart-visual" id="projection-chart">
+                            <div class="chart-projection">
+                                <div class="projection-bar" style="height: 50%">
+                                    <div class="projection-label">2024: 1.3 TW</div>
+                                </div>
+                                <div class="projection-bar future" style="height: 100%">
+                                    <div class="projection-label">2030: 2.8 TW</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-note">+115% en 6 ans prévus</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Technologies d'Avenir -->
+    <section id="technologies" class="technologies-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Technologies <span class="highlight">d'Avenir</span></h2>
+                <p class="section-subtitle">Les innovations qui révolutionneront l'énergie solaire dans les 10 prochaines années</p>
+            </div>
+            
+            <div class="tech-slider">
+                <div class="tech-slide active">
+                    <div class="tech-visual" id="tech1-scene">
+                        <div class="scene-loading">
+                            <div class="spinner"></div>
+                            <p>Chargement de la technologie...</p>
+                        </div>
+                    </div>
+                    <div class="tech-info">
+                        <div class="tech-badge new">Nouveau</div>
+                        <h3><i class="fas fa-paint-roller"></i> Peinture Solaire</h3>
+                        <p>Des nanoparticules de pérovskite suspendues dans un liquide qui peuvent être appliquées comme de la peinture sur n'importe quelle surface, transformant les murs, toits et fenêtres en générateurs d'électricité.</p>
+                        <div class="tech-specs">
+                            <div class="spec">
+                                <span class="spec-label">Rendement Labo :</span>
+                                <span class="spec-value">25.2%</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Coût estimé :</span>
+                                <span class="spec-value">0.10€/W</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Disponibilité :</span>
+                                <span class="spec-value">2026-2028</span>
+                            </div>
+                        </div>
+                        <div class="tech-progress">
+                            <div class="progress-label">
+                                <span>Niveau de développement</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-slide">
+                    <div class="tech-visual" id="tech2-scene">
+                        <div class="scene-loading">
+                            <div class="spinner"></div>
+                            <p>Chargement de la technologie...</p>
+                        </div>
+                    </div>
+                    <div class="tech-info">
+                        <div class="tech-badge pilot">Projet Pilote</div>
+                        <h3><i class="fas fa-road"></i> Routes Solaires</h3>
+                        <p>Revêtements routiers intégrant des cellules photovoltaïques ultra-résistantes sous une couche de verre trempé. Capables de supporter le passage de poids lourds tout en produisant de l'électricité.</p>
+                        <div class="tech-specs">
+                            <div class="spec">
+                                <span class="spec-label">Rendement :</span>
+                                <span class="spec-value">15%</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Production/km :</span>
+                                <span class="spec-value">150 MWh/an</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Tests :</span>
+                                <span class="spec-value">France, Chine, USA</span>
+                            </div>
+                        </div>
+                        <div class="tech-progress">
+                            <div class="progress-label">
+                                <span>Niveau de développement</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-slide">
+                    <div class="tech-visual" id="tech3-scene">
+                        <div class="scene-loading">
+                            <div class="spinner"></div>
+                            <p>Chargement de la technologie...</p>
+                        </div>
+                    </div>
+                    <div class="tech-info">
+                        <div class="tech-badge research">R&D</div>
+                        <h3><i class="fas fa-space-shuttle"></i> Satellites Solaires</h3>
+                        <p>Centrales solaires spatiales en orbite géostationnaire transmettant l'énergie vers la Terre par micro-ondes ou lasers. Production continue 24h/24 sans interférences atmosphériques.</p>
+                        <div class="tech-specs">
+                            <div class="spec">
+                                <span class="spec-label">Rendement Espace :</span>
+                                <span class="spec-value">55%</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Puissance/Sat :</span>
+                                <span class="spec-value">2 GW</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Horizon :</span>
+                                <span class="spec-value">2035-2040</span>
+                            </div>
+                        </div>
+                        <div class="tech-progress">
+                            <div class="progress-label">
+                                <span>Niveau de développement</span>
+                                <span>25%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 25%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-navigation">
+                <button class="tech-nav prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="tech-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                
+                <button class="tech-nav next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <!-- Technologies Émergentes Grid -->
+            <div class="emerging-tech" data-aos="fade-up">
+                <h3><i class="fas fa-seedling"></i> Autres Technologies Émergentes</h3>
+                <div class="emerging-grid">
+                    <div class="emerging-card">
+                        <div class="emerging-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h4>Panneaux Bifaciaux</h4>
+                        <p>Capture la lumière des deux côtés, augmentant la production de 5-30%</p>
+                        <div class="emerging-status commercial">Commercial</div>
+                    </div>
+                    
+                    <div class="emerging-card">
+                        <div class="emerging-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h4>Cellules Tandem</h4>
+                        <p>Superposition de matériaux différents pour capturer plus de spectre lumineux</p>
+                        <div class="emerging-status pilot">Projet Pilote</div>
+                    </div>
+                    
+                    <div class="emerging-card">
+                        <div class="emerging-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <h4>Hybride Solaire-Éolien</h4>
+                        <p>Intégration optimisée pour une production continue jour et nuit</p>
+                        <div class="emerging-status commercial">Commercial</div>
+                    </div>
+                    
+                    <div class="emerging-card">
+                        <div class="emerging-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <h4>Recyclage Avancé</h4>
+                        <p>Récupération de 99% des matériaux des panneaux en fin de vie</p>
+                        <div class="emerging-status research">R&D</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Défi -->
+    <section id="defi" class="defi-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Défi <span class="highlight">"En trois dimensions"</span></h2>
+                <p class="section-subtitle">Projet réalisé pour la Nuit de l'Info 2024 - IUT de Marne-la-Vallée</p>
+            </div>
+            
+            <div class="defi-content">
+                <div class="defi-card" data-aos="fade-right">
+                    <div class="defi-header">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Défi Relevé</h3>
+                    </div>
+                    <p>Intégration réussie d'éléments en trois dimensions avec la bibliothèque JavaScript Three.js dans un site éducatif complet sur l'énergie solaire.</p>
+                    
+                    <div class="achievements">
+                        <div class="achievement">
+                            <div class="achievement-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>7 Scènes 3D Interactives</h4>
+                                <p>Visualisations uniques pour chaque aspect de l'énergie solaire</p>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement">
+                            <div class="achievement-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>50+ Points de Données</h4>
+                                <p>Informations vérifiées et actualisées</p>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement">
+                            <div class="achievement-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Contenu Éducatif Complet</h6>
+                                <p>Approche objective et pédagogique</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="prizes-card" data-aos="fade-left">
+                    <div class="prizes-header">
+                        <i class="fas fa-award"></i>
+                        <h3>Récompenses du Défi</h3>
+                    </div>
+                    
+                    <div class="prizes-list">
+                        <div class="prize-item first">
+                            <div class="prize-medal">
+                                <i class="fas fa-trophy"></i>
+                                <span>1er</span>
+                            </div>
+                            <div class="prize-details">
+                                <h4>Premier Prix</h4>
+                                <p>Bon d'achat FNAC d'une valeur de 150€</p>
+                            </div>
+                        </div>
+                        
+                        <div class="prize-item second">
+                            <div class="prize-medal">
+                                <i class="fas fa-medal"></i>
+                                <span>2ème</span>
+                            </div>
+                            <div class="prize-details">
+                                <h4>Deuxième Prix</h4>
+                                <p>Bon d'achat FNAC d'une valeur de 100€</p>
+                            </div>
+                        </div>
+                        
+                        <div class="prize-item third">
+                            <div class="prize-medal">
+                                <i class="fas fa-medal"></i>
+                                <span>3ème</span>
+                            </div>
+                            <div class="prize-details">
+                                <h4>Troisième Prix</h4>
+                                <p>Bon d'achat FNAC d'une valeur de 50€</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="defi-rules">
+                        <h5><i class="fas fa-clipboard-list"></i> Critères d'Évaluation</h5>
+                        <ul>
+                            <li>Intégration et qualité des éléments 3D</li>
+                            <li>Créativité et design du site</li>
+                            <li>Pertinence du contenu éducatif</li>
+                            <li>Expérience utilisateur et interactivité</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="iut-info" data-aos="fade-up">
+                <div class="iut-logo">
+                    <i class="fas fa-university"></i>
+                    <h3>IUT de Marne-la-Vallée</h3>
+                </div>
+                
+                <div class="iut-details">
+                    <p><strong>Composante de l'Université Gustave Eiffel</strong> avec plus de 2 200 étudiantes et étudiants.</p>
+                    
+                    <div class="iut-stats">
+                        <div class="iut-stat">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">BUT</div>
+                        </div>
+                        <div class="iut-stat">
+                            <div class="stat-number">75%</div>
+                            <div class="stat-label">Enseignants-chercheurs</div>
+                        </div>
+                        <div class="iut-stat">
+                            <div class="stat-number">86%</div>
+                            <div class="stat-label">Réussite</div>
+                        </div>
+                        <div class="iut-stat">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Licences Pro</div>
+                        </div>
+                    </div>
+                    
+                    <div class="departments">
+                        <h5><i class="fas fa-graduation-cap"></i> Départements :</h5>
+                        <div class="dept-tags">
+                            <span class="dept-tag">GCCD</span>
+                            <span class="dept-tag">GEA</span>
+                            <span class="dept-tag">INFO</span>
+                            <span class="dept-tag">MMI</span>
+                            <span class="dept-tag">MT2E</span>
+                            <span class="dept-tag">TC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-sun"></i>
+                        <span>Solar<span class="highlight">Edu</span>3D</span>
+                    </div>
+                    <p class="footer-tagline">L'énergie solaire expliquée en trois dimensions</p>
+                    
+                    <div class="footer-social">
+                        <a href="#" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navigation Rapide</h4>
+                    <ul>
+                        <li><a href="#accueil"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+                        <li><a href="#definition"><i class="fas fa-chevron-right"></i> Définition</a></li>
+                        <li><a href="#fonctionnement"><i class="fas fa-chevron-right"></i> Fonctionnement</a></li>
+                        <li><a href="#avantages"><i class="fas fa-chevron-right"></i> Avantages</a></li>
+                        <li><a href="#inconvenients"><i class="fas fa-chevron-right"></i> Inconvénients</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="#statistiques"><i class="fas fa-chevron-right"></i> Statistiques</a></li>
+                        <li><a href="#technologies"><i class="fas fa-chevron-right"></i> Technologies</a></li>
+                        <li><a href="#defi"><i class="fas fa-chevron-right"></i> Défi 3D</a></li>
+                        <li><a href="#" onclick="showSources()"><i class="fas fa-chevron-right"></i> Sources</a></li>
+                        <li><a href="#" onclick="showTeam()"><i class="fas fa-chevron-right"></i> Équipe</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>À Propos</h4>
+                    <p>Site éducatif créé dans le cadre de la Nuit de l'Info 2024.</p>
+                    <p>Défi "En trois dimensions" - Intégration d'éléments 3D avec Three.js</p>
+                    
+                    <div class="footer-credits">
+                        <h5><i class="fas fa-code"></i> Technologies Utilisées</h5>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Three.js</span>
+                            <span class="tech-tag">AOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2024 Nuit de l'Info - Tous droits réservés</p>
+                    <p>IUT de Marne-la-Vallée - Université Gustave Eiffel</p>
+                </div>
+                
+                <div class="back-to-top">
+                    <a href="#accueil" class="back-btn">
+                        <i class="fas fa-arrow-up"></i>
+                        Retour en haut
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    
+    <script>
+        // Initialisation AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Initialisation au chargement
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialiser toutes les scènes 3D
+            initAll3DScenes();
+            
+            // Initialiser la navigation
+            initNavigation();
+            
+            // Initialiser les animations de nombres
+            animateNumbers();
+            
+            // Initialiser le slider des technologies
+            initTechSlider();
+            
+            // Initialiser les contrôles interactifs
+            initInteractiveControls();
+        });
+    </script>
+</body>
+</html>
