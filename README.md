@@ -29,26 +29,11 @@ Enfin, un système de géolocalisation 3D permet de convertir des coordonnées l
 
 
 trois-dimensions/
+├── assets/
+├── index.html
 ├── README.md
-├── app/
-│   ├── favicon.ico
-│   ├── globals.css
-│   ├── layout.tsx
-│   ├── page.tsx
-│   ├── components/
-│   │   └── SolarExperience.tsx
-│   └── utils/
-│       └── solarLogic.ts
-└── public/
-    ├── battery.glb
-    ├── cloud.glb
-    ├── file.svg
-    ├── globe.svg
-    ├── next.svg
-    ├── planet_earth.glb
-    ├── sun.glb
-    ├── vercel.svg
-    └── window.svg
+├── script.js
+└── style.css
 
 
 ## 04 : Méthode pour exécuter le projet : 
